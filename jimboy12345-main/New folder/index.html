@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <style>
+    /* ===== GENERAL ===== */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ===== CONTAINER / CARD ===== */
+    .container {
+      width: 90%;
+      max-width: 720px;
+      background: #ffffff;
+      padding: 45px 40px;
+      border-radius: 24px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== PROFILE PIC ===== */
+    .profile-pic {
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #6366f1;
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+      margin-bottom: 22px;
+    }
+
+    /* ===== MAIN TITLE ===== */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    /* ===== SUB TITLE ===== */
+    .subtitle {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    /* ===== SECTION HEADERS ===== */
+    h2 {
+      margin-top: 35px;
+      margin-bottom: 18px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #1f2937;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, #6366f1, #22d3ee);
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 10px;
+    }
+
+    /* ===== TEXT ===== */
+    p {
+      font-size: 15.5px;
+      color: #374151;
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    p strong {
+      color: #111827;
+    }
+
+    /* ===== LIST ===== */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    li {
+      background: linear-gradient(135deg, #f1f5f9, #eef2ff);
+      margin: 12px 0;
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #1f2937;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    li:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>My Portfolio</h1>
+    <div class="subtitle">Student | Aspiring Web Developer</div>
+
+    <img src="image.png" alt="Profile Picture" class="profile-pic">
+
+    <h2>Personal Information</h2>
+    <p><strong>Name:</strong> Jimboy Cuizon</p>
+    <p><strong>Age:</strong> 21</p>
+    <p><strong>Email:</strong> your@email.com</p>
+    <p><strong>Location:</strong> Sergio Osmeña, Z.N.</p>
+
+    <h2>Accomplishments</h2>
+    <ul>
+      <li>✔ Completed a basic HTML and CSS course</li>
+      <li>✔ Created my first personal website</li>
+      <li>✔ Participated in school or college projects</li>
+      <li>✔ Learned basics of web design</li>
+    </ul>
+  </div>
+
+</body>
+</html>
